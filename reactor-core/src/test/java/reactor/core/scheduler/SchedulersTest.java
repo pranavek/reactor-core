@@ -39,12 +39,12 @@ import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
+import io.micrometer.core.instrument.simple.SimpleMeterRegistry;
 import org.assertj.core.api.Assertions;
 import org.assertj.core.api.Condition;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 import reactor.core.Disposable;
 import reactor.core.Disposables;
@@ -219,6 +219,27 @@ public class SchedulersTest {
 		assertThat(Schedulers.removeExecutorServiceDecorator("keyfoo"))
 				.as("unknown decorator ignored")
 				.isNull();
+	}
+
+	@Test
+	public void metricsActivatedHasDistinctExecutorIdTags() {
+		SimpleMeterRegistry simpleMeterRegistry = new SimpleMeterRegistry();
+		io.micrometer.core.instrument.Metrics.addRegistry(simpleMeterRegistry);
+		Schedulers.enableMetrics();
+		try {
+			Schedulers.newParallel("A", 4);
+			Schedulers.newParallel("B", 3);
+		}
+		finally {
+			Schedulers.disableMetrics();
+			io.micrometer.core.instrument.Metrics.removeRegistry(simpleMeterRegistry);
+		}
+
+		assertThat(simpleMeterRegistry.getMeters()
+		                              .stream()
+		                              .map(m -> m.getId().getTag("executorId"))
+		                              .distinct())
+				.hasSize(7);
 	}
 
 	@Test

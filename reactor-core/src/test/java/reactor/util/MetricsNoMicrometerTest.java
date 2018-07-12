@@ -16,12 +16,15 @@
 
 package reactor.util;
 
+import java.util.concurrent.Executors;
+
 import org.assertj.core.api.Assumptions;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
@@ -69,6 +72,15 @@ public class MetricsNoMicrometerTest {
 	public void MonoMetricsFusedNoOp() {
 		assertThatCode(() -> Mono.just("foo").metrics().block())
 				.doesNotThrowAnyException();
+	}
+
+	@Test
+	public void schedulersInstrumentation() {
+		assertThatCode(() -> {
+			Schedulers.enableMetrics();
+			Metrics.instrumentedExecutorService().apply("foo",
+					Executors::newSingleThreadScheduledExecutor);
+		}).doesNotThrowAnyException();
 	}
 
 }
