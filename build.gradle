@@ -358,10 +358,18 @@ project('reactor-core') {
 	  copy {
 		from('src/main/java')
 		into "$project.buildDir/docs/javadoc/"
-		include "**/doc-files/*"
+		include "**/doc-files/**/*"
 	  }
 	}
   }
+
+  task showDiagramsInSourceJavadoc(type: Copy) {
+	from "$project.rootDir/docs/svg/marbles/"
+	into "${sourceSets.main.java.srcDirs.find()}/reactor/core/publisher/doc-files/marbles/"
+	include "*.svg"
+  }
+
+  processResources.dependsOn showDiagramsInSourceJavadoc
 
   // Need https://github.com/Kotlin/dokka/issues/184 to be fixed to avoid "Can't find node by signature" log spam
   task dokka(type: org.jetbrains.dokka.gradle.DokkaTask) {
