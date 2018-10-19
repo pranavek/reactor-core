@@ -1,6 +1,13 @@
 # Contributing SVGs
 
-## Contributing
+Most images are in SVG format and represent a marble diagram.
+Such SVG are embedded in the javadoc jar, and as such need to be in a `doc-files` folder inside the source hierarchy.
+
+As a result, most SVG live in `/reactor-core/src/main/java/reactor/core/publisher/doc-files/marbles/`.
+
+Additional SVG that are specific to the reference documentation can be added later in a subfolder here in `/docs/svg/`.
+
+## Contributing Marble Diagrams
 
 The recommended workflow for editing or contributing new SVG marble diagrams is as follows:
 
@@ -11,9 +18,8 @@ The recommended workflow for editing or contributing new SVG marble diagrams is 
    - `font-family:'Lucida Console','Courier New'`
  - Preferably, run the new/edited SVG through an optimizer, but keep it pretty printed (see below)
 
-All `*.svg` files found in `/docs/svg/marbles` folder will be copied during `javadoc` task to a `doc-files` folder at the level of the `Flux.java` and `Mono.java` classes.
+All `*.svg` marble diagrams are found in `/reactor-core/src/main/java/reactor/core/publisher/doc-files/marbles/` folder.
 This same folder will be embedded in the `-sources.jar` and `-javadoc.jar` artifacts.
-It is ignored by git (`.gitignore`) and should **not** be committed to source control.
 
 ### Optimizing the SVG files
 
@@ -30,12 +36,12 @@ So the recommended configuration for optimizing is as follows:
  - Use the following command from the repo root to maintain arrowheads and pretty printing while optimizing the SVGs correctly:
  
 ```sh
-svgo --folder="docs/svg/marbles/" --multipass --pretty --indent=2 --precision=0 --disable={cleanupIDs,removeNonInheritableGroupAttrs}
+svgo --folder="reactor-core/src/main/java/reactor/core/publisher/doc-files/marbles/" --multipass --pretty --indent=2 --precision=0 --disable={cleanupIDs,removeNonInheritableGroupAttrs}
 ```
 
 Alternatively, to optimize a single SVG file, use the `--input` option:
 
 ```sh
-svgo --input="docs/svg/marbles/reduce.svg" --multipass --pretty --indent=2 --precision=0 --disable={cleanupIDs,removeNonInheritableGroupAttrs}
+svgo --input="reactor-core/src/main/java/reactor/core/publisher/doc-files/marbles/reduce.svg" --multipass --pretty --indent=2 --precision=0 --disable={cleanupIDs,removeNonInheritableGroupAttrs}
 ```
 
