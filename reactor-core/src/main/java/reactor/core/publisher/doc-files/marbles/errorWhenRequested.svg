@@ -80,31 +80,23 @@
   <text y="74" x="-220" transform="rotate(-90)" id="text911-6" fill="#45b8de" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan font-size="16" font-weight="400" x="-220" y="89" id="tspan909-0" font-family="'Tahoma','Nimbus Sans L'" fill="#45b8de" fill-opacity="1">subscribe()</tspan>
   </text>
-  <path id="line32" fill="none" fill-opacity="1" stroke="#45b8de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.00000002,6.00000007" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_2-3)" d="M152 97l-1 114"/>
-  <text y="-148" x="99" transform="rotate(90)" id="text923" fill="#45b8de" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
-    <tspan font-size="16" font-weight="400" x="100" y="-133" id="tspan921" font-family="'Tahoma','Nimbus Sans L'" fill="#45b8de">onSubscribe()</tspan>
-  </text>
   <path id="line998" fill="none" fill-opacity="1" stroke="#45b8de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.00000002,6.00000005" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_3-3)" d="M203 225V118"/>
   <text id="text1002" transform="rotate(-90)" x="-220" y="178" fill="#45b8de" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan id="tspan1000" y="193" x="-219" font-weight="400" font-size="16" font-family="'Tahoma','Nimbus Sans L'" fill="#45b8de" fill-opacity="1">request()</tspan>
   </text>
   <path id="path1272" d="M51 332h270l1 1v65l-1 1H51l-1-1v-65l1-1z" fill="#fff" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" stroke-opacity="1"/>
   <path id="line1274" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" stroke-opacity="1" marker-end="url(#FilledArrow_Marker-3)" d="M25 534h295"/>
-  <path id="line1276" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.00000002,6.00000006" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_2-5)" d="M203 400l1 104"/>
-  <path id="path1278" d="M222 548l-2 3h-3l-32-31v-3l3-3h3l31 32v2z" fill="#ef2200" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
-  <path id="path1280" d="M219 514l3 3v2l-31 32h-3l-3-3v-2l32-32h2z" fill="#ef2200" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
+  <path id="line1276" d="M143 400l1 104" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.00000002,6.00000006" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_2-5)"/>
+  <path id="path1278" d="M162 548l-2 3h-3l-32-31v-3l3-3h3l31 32z" fill="#ef2200" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
+  <path id="path1280" d="M159 514l3 3v2l-31 32h-3l-3-3v-2l32-32z" fill="#ef2200" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
   <path id="line1282" fill="none" fill-opacity="1" stroke="#45b8de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.00000002,6.00000005" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_3-3)" d="M99 528V421"/>
   <text id="text1286" transform="rotate(-90)" x="-524" y="75" fill="#45b8de" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan id="tspan1284" y="90" x="-523" font-weight="400" font-size="16" font-family="'Tahoma','Nimbus Sans L'" fill="#45b8de" fill-opacity="1">subscribe()</tspan>
   </text>
-  <path id="line1288" fill="none" fill-opacity="1" stroke="#45b8de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.00000002,6.00000007" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_2-3)" d="M152 401l-1 114"/>
-  <text id="text1292" transform="rotate(90)" x="403" y="-149" fill="#45b8de" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
-    <tspan id="tspan1290" y="-134" x="403" font-weight="400" font-size="16" font-family="'Tahoma','Nimbus Sans L'" fill="#45b8de">onSubscribe()</tspan>
-  </text>
   <text y="349" x="-106" id="text1302" fill="#34302c" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan id="tspan1300" y="371" x="80" font-weight="700" font-size="24" font-family="'Tahoma','Nimbus Sans L'" fill="#34302c">error (</tspan>
   </text>
-  <path id="path1304" d="M200 381l-2 2h-3l-32-31v-3l3-2h3l31 31v3z" fill="#ef2200" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
+  <path id="path1304" d="M200 381l-2 2h-3l-32-31v-3l3-2h3l31 31z" fill="#ef2200" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
   <path id="path1306" d="M197 347l3 2v3l-31 31h-3l-2-2v-3l31-31h2z" fill="#ef2200" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
   <text id="text30" x="-107" y="45" fill="#34302c" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan font-size="24" font-weight="700" x="79" y="67" id="tspan28" font-family="'Tahoma','Nimbus Sans L'" fill="#34302c">error (</tspan>

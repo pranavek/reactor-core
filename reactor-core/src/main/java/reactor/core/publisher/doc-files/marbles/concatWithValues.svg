@@ -46,23 +46,27 @@
   <path id="line100" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2,6" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_2)" d="M193 264l1 28"/>
   <path id="line103" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2,6" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_2)" d="M263 264v28"/>
   <path id="line106" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2,6" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_2)" d="M445 264v27"/>
-  <ellipse id="ellipse110" ry="23" rx="23" cy="336" cx="335" fill="#ff5a01" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
-  <ellipse id="ellipse112" ry="23" rx="23" cy="336" cx="335" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" stroke-opacity="1"/>
-  <ellipse id="ellipse115" ry="23" rx="23" cy="336" cx="403" fill="#e739ce" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
-  <ellipse id="ellipse117" ry="23" rx="23" cy="336" cx="403" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" stroke-opacity="1"/>
+  <g id="g919" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1">
+    <ellipse stroke="none" fill="#ff5a01" cx="335" cy="336" rx="23" ry="23" id="ellipse110"/>
+    <ellipse stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#34302c" fill="none" cx="335" cy="336" rx="23" ry="23" id="ellipse112"/>
+  </g>
+  <circle id="ellipse115" cy="336" cx="403" r="23" fill="#e739ce" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
+  <circle id="ellipse117" cy="336" cx="403" r="23" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" stroke-opacity="1"/>
   <path id="line120" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2,6" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_2)" d="M334 264v28"/>
   <path id="line123" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2,6" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_2)" d="M403 264v28"/>
-  <text id="text65" x="3" y="213" fill="#34302c" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
-    <tspan font-size="24" font-weight="700" x="112" y="241" id="tspan61" font-family="'Tahoma','Nimbus Sans L'" fill="#34302c">concatWithValues <tspan id="tspan904" font-size="30">(</tspan> </tspan>
+  <text id="text65" x="-9" y="213" fill="#34302c" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
+    <tspan font-size="24" font-weight="700" x="100" y="241" id="tspan61" font-family="Tahoma,'Nimbus Sans L'" fill="#34302c">concatWithValues <tspan id="tspan904" font-size="30">(</tspan> </tspan>
   </text>
-  <ellipse id="ellipse126" ry="23" rx="23" cy="232" cx="358" fill="#ff5a01" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
-  <ellipse id="ellipse128" ry="23" rx="23" cy="232" cx="358" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" stroke-opacity="1"/>
-  <ellipse id="ellipse131" ry="23" rx="23" cy="229" cx="421" fill="#e739ce" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
-  <ellipse id="ellipse133" ry="23" rx="23" cy="229" cx="421" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" stroke-opacity="1"/>
   <text y="213" x="385" id="text898" fill="#34302c" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan id="tspan896" y="241" font-weight="700" font-size="30" font-family="'Tahoma','Nimbus Sans L'" fill="#34302c">,</tspan>
   </text>
   <text id="text902" x="447" y="213" fill="#34302c" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan font-size="30" font-weight="700" y="241" id="tspan900" font-family="'Tahoma','Nimbus Sans L'" fill="#34302c">)</tspan>
   </text>
+  <circle id="ellipse115-2" cy="229" cx="423" r="23" fill="#e739ce" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
+  <circle id="ellipse117-3" cy="229" cx="423" r="23" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" stroke-opacity="1"/>
+  <g transform="translate(26 -105)" id="g919-8" fill-opacity="1" stroke-dasharray="none" stroke-opacity="1">
+    <circle r="23" cx="335" cy="336" id="ellipse110-7" fill="#ff5a01" stroke="none"/>
+    <circle r="23" cx="335" cy="336" id="ellipse112-8" fill="none" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>

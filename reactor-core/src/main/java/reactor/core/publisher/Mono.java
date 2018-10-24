@@ -280,7 +280,7 @@ public abstract class Mono<T> implements Publisher<T> {
 	 * and replay that signal, effectively behaving like the fastest of these competing
 	 * sources.
 	 * <p>
-	 * <img class="marble" src="doc-files/marbles/firstVarSourcesForMono.svg" alt="">
+	 * <img class="marble" src="doc-files/marbles/firstForMono.svg" alt="">
 	 * <p>
 	 * @param monos The deferred monos to use.
 	 * @param <T> The type of the function result.
@@ -296,7 +296,7 @@ public abstract class Mono<T> implements Publisher<T> {
 	 * Pick the first available result coming from any of the given monos and populate a new {@literal Mono}.
 	 *
 	 * <p>
-	 * <img class="marble" src="doc-files/marbles/firstIterableSourcesForMono.svg" alt="">
+	 * <img class="marble" src="doc-files/marbles/firstForMono.svg" alt="">
 	 * <p>
 	 * @param monos The monos to use.
 	 * @param <T> The type of the function result.
@@ -648,7 +648,7 @@ public abstract class Mono<T> implements Publisher<T> {
 	 * <ul> <li>Eager resource cleanup happens just before the source termination and exceptions raised by the cleanup
 	 * Consumer may override the terminal event.</li> <li>Non-eager cleanup will drop any exception.</li> </ul>
 	 * <p>
-	 * <img class="marble" src="doc-files/marbles/usingWithCleanupAndEagerFormMono.svg" alt="">
+	 * <img class="marble" src="doc-files/marbles/usingForMono.svg" alt="">
 	 *
 	 * @param resourceSupplier a {@link Callable} that is called on subscribe to create the resource
 	 * @param sourceSupplier a {@link Mono} factory to create the Mono depending on the created resource
@@ -675,7 +675,7 @@ public abstract class Mono<T> implements Publisher<T> {
 	 * Eager resource cleanup happens just before the source termination and exceptions raised by the cleanup Consumer
 	 * may override the terminal event.
 	 * <p>
-	 * <img class="marble" src="doc-files/marbles/usingWithCleanupForMono.svg" alt="">
+	 * <img class="marble" src="doc-files/marbles/usingForMono.svg" alt="">
 	 *
 	 * @param resourceSupplier a {@link Callable} that is called on subscribe to create the resource
 	 * @param sourceSupplier a {@link Mono} factory to create the Mono depending on the created resource
@@ -707,7 +707,9 @@ public abstract class Mono<T> implements Publisher<T> {
 	 * of the main sequence with the same terminal signal (no resource is established, no
 	 * cleanup is invoked).
 	 * <p>
-	 * <img class="marble" src="doc-files/marbles/usingWhenWithAsyncCompleteAndErrorForMono.svg" alt="">
+	 * <img class="marble" src="doc-files/marbles/usingWhenSuccessForMono.svg" alt="">
+	 * <p>
+	 * <img class="marble" src="doc-files/marbles/usingWhenFailureForMono.svg" alt="">
 	 *
 	 * @param resourceSupplier a {@link Publisher} that "generates" the resource,
 	 * subscribed for each subscription to the main sequence
@@ -744,7 +746,9 @@ public abstract class Mono<T> implements Publisher<T> {
 	 * of the main sequence with the same terminal signal (no resource is established, no
 	 * cleanup is invoked).
 	 * <p>
-	 * <img class="marble" src="doc-files/marbles/usingWhenAllForMono.svg" alt="">
+	 * <img class="marble" src="doc-files/marbles/usingWhenSuccessForMono.svg" alt="">
+	 * <p>
+	 * <img class="marble" src="doc-files/marbles/usingWhenFailureForMono.svg" alt="">
 	 *
 	 * @param resourceSupplier a {@link Publisher} that "generates" the resource,
 	 * subscribed for each subscription to the main sequence

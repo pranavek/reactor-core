@@ -65,6 +65,9 @@
         <path d="M12 0L0-4v9z" id="path4-7-9" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
+    <marker orient="auto" refY="0" refX="0" id="Arrow2Lend" overflow="visible">
+      <path id="path5247" d="M-11-4L1 0l-12 4c2-2 2-6 0-8z" fill="#000" fill-opacity="1" fill-rule="evenodd" stroke="#000" stroke-width="1" stroke-linejoin="round" stroke-opacity="1"/>
+    </marker>
   </defs>
   <path d="M108 173h271v67H108v-67z" id="path26-5" fill="#fff" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" stroke-opacity="1"/>
   <path id="line41-3" fill="none" fill-opacity="1" stroke="#34302c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" stroke-opacity="1" marker-end="url(#FilledArrow_Marker-3-6)" d="M82 375h296"/>
@@ -74,10 +77,6 @@
   <path id="line907-3" fill="none" fill-opacity="1" stroke="#45b8de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.00000002,6.00000005" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_3-3)" d="M156 369l1-107"/>
   <text y="132" x="-364" transform="rotate(-90)" id="text911-6" fill="#45b8de" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan font-size="16" font-weight="400" x="-364" y="147" id="tspan909-0" font-family="'Tahoma','Nimbus Sans L'" fill="#45b8de" fill-opacity="1">subscribe()</tspan>
-  </text>
-  <path id="line32-1" fill="none" fill-opacity="1" stroke="#45b8de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.00000002,6.00000007" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_2-3-3)" d="M209 242v114"/>
-  <text y="-206" x="243" transform="rotate(90)" id="text923-2" fill="#45b8de" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
-    <tspan font-size="16" font-weight="400" x="244" y="-191" id="tspan921-7" font-family="'Tahoma','Nimbus Sans L'" fill="#45b8de">onSubscribe()</tspan>
   </text>
   <text id="text30-8" x="-39" y="192" fill="#34302c" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan font-size="24" font-weight="700" x="147" y="214" id="tspan28-7" font-family="'Tahoma','Nimbus Sans L'" fill="#34302c">error (</tspan>
@@ -90,4 +89,5 @@
   <text id="text1092" x="37" y="191" fill="#34302c" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan font-size="21" font-weight="400" x="223" y="213" id="tspan1090" font-family="'Tahoma','Nimbus Sans L'" fill="#34302c">( )</tspan>
   </text>
+  <path d="M256 206h20" id="path4954" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1" marker-end="url(#Arrow2Lend)"/>
 </svg>

@@ -75,16 +75,12 @@
   <text y="132" x="-364" transform="rotate(-90)" id="text911-6" fill="#45b8de" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan font-size="16" font-weight="400" x="-364" y="147" id="tspan909-0" font-family="'Tahoma','Nimbus Sans L'" fill="#45b8de" fill-opacity="1">subscribe()</tspan>
   </text>
-  <path id="line32-1" fill="none" fill-opacity="1" stroke="#45b8de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.00000002,6.00000007" stroke-opacity="1" marker-end="url(#FilledArrow_Marker_2-3-3)" d="M209 242v114"/>
-  <text y="-206" x="243" transform="rotate(90)" id="text923-2" fill="#45b8de" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
-    <tspan font-size="16" font-weight="400" x="244" y="-191" id="tspan921-7" font-family="'Tahoma','Nimbus Sans L'" fill="#45b8de">onSubscribe()</tspan>
-  </text>
   <text id="text30-8" x="-19" y="190" fill="#34302c" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
     <tspan font-size="24" font-weight="700" x="167" y="212" id="tspan28-7" font-family="'Tahoma','Nimbus Sans L'" fill="#34302c">error (</tspan>
   </text>
-  <path d="M292 222l-3 2h-3l-31-31v-3l2-2h3l32 31v3z" id="path54-9" fill="#ef2200" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
-  <path d="M289 188l2 2v3l-31 31h-2l-3-2v-3l31-31h3z" id="path57-2" fill="#ef2200" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1"/>
-  <text y="190" x="125" id="text905-0" fill="#34302c" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
-    <tspan id="tspan903-2" y="212" x="311" font-weight="700" font-size="24" font-family="'Tahoma','Nimbus Sans L'" fill="#34302c">)</tspan>
+  <path d="M292 222l-3 2h-3l-31-31v-3l2-2h3l32 31v3z" id="path54-9" stroke-dasharray="none" stroke-opacity="1" stroke="none" fill-opacity="1" fill="#ef2200"/>
+  <path d="M289 188l2 2v3l-31 31h-2l-3-2v-3l31-31h3z" id="path57-2" stroke-dasharray="none" stroke-opacity="1" stroke="none" fill-opacity="1" fill="#ef2200"/>
+  <text y="190" x="119" id="text905-0" fill="#34302c" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1">
+    <tspan id="tspan903-2" y="212" x="305" font-weight="700" font-size="24" font-family="Tahoma,'Nimbus Sans L'" fill="#34302c">)</tspan>
   </text>
 </svg>
