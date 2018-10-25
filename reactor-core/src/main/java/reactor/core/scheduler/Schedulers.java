@@ -390,7 +390,7 @@ public abstract class Schedulers {
 	 */
 	public static void enableMetrics() {
 		if (Metrics.isInstrumentationAvailable()) {
-			Schedulers.setFactory(METRICS_FACTORY);
+			addExecutorServiceDecorator(METRICS_DECORATOR_KEY, METRICS_DECORATOR);
 		}
 	}
 
@@ -401,8 +401,8 @@ public abstract class Schedulers {
 	 * instead. No-op if Micrometer isn't available or {@link #enableMetrics()} hasn't been called.
 	 */
 	public static void disableMetrics() {
-		if (Metrics.isInstrumentationAvailable() && factory == METRICS_FACTORY) {
-			Schedulers.resetFactory();
+		if (Metrics.isInstrumentationAvailable()) {
+			removeExecutorServiceDecorator(METRICS_DECORATOR_KEY);
 		}
 	}
 
@@ -670,16 +670,8 @@ public abstract class Schedulers {
 	static final Map<String, TriFunction<String, String, ScheduledExecutorService, ScheduledExecutorService>>
 			DECORATORS = new LinkedHashMap<>();
 
-	static final BiFunction<String, Supplier<? extends ScheduledExecutorService>, ScheduledExecutorService> METRICS_DECORATOR = Metrics.instrumentedExecutorService();
-
-	static final Factory METRICS_FACTORY   = new Factory() {
-		@Override
-		public ScheduledExecutorService decorateExecutorService(String schedulerType,
-				Supplier<? extends ScheduledExecutorService> actual) {
-			return METRICS_DECORATOR.apply(schedulerType, actual);
-		}
-	};
-
+	static final String METRICS_DECORATOR_KEY = "reactor.metrics.decorator";
+	static final TriFunction<String, String, ScheduledExecutorService, ScheduledExecutorService> METRICS_DECORATOR = Metrics.instrumentedExecutorService();
 
 	static volatile Factory factory = DEFAULT;
 

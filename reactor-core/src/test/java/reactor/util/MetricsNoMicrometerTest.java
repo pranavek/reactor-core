@@ -26,6 +26,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
+import reactor.util.function.Tuples;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
@@ -80,8 +81,8 @@ public class MetricsNoMicrometerTest {
 		try {
 			assertThatCode(() -> {
 				Schedulers.enableMetrics();
-				Metrics.instrumentedExecutorService().apply("foo",
-						Executors::newSingleThreadScheduledExecutor);
+				Metrics.instrumentedExecutorService().apply("foo", "bar",
+						Executors.newSingleThreadScheduledExecutor());
 				Scheduler s = Schedulers.newSingle("foo");
 				s.schedule(() -> System.out.println("foo"));
 			})
