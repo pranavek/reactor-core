@@ -24,6 +24,7 @@ import org.junit.Test;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -76,11 +77,19 @@ public class MetricsNoMicrometerTest {
 
 	@Test
 	public void schedulersInstrumentation() {
-		assertThatCode(() -> {
-			Schedulers.enableMetrics();
-			Metrics.instrumentedExecutorService().apply("foo",
-					Executors::newSingleThreadScheduledExecutor);
-		}).doesNotThrowAnyException();
+		try {
+			assertThatCode(() -> {
+				Schedulers.enableMetrics();
+				Metrics.instrumentedExecutorService().apply("foo",
+						Executors::newSingleThreadScheduledExecutor);
+				Scheduler s = Schedulers.newSingle("foo");
+				s.schedule(() -> System.out.println("foo"));
+			})
+					.doesNotThrowAnyException();
+		}
+		finally {
+			Schedulers.disableMetrics();
+		}
 	}
 
 }
